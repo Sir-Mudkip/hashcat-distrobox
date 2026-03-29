@@ -1,7 +1,6 @@
 FROM docker.io/nvidia/cuda:13.2.0-cudnn-runtime-ubuntu24.04
 
 RUN apt-get update && apt-get install -y \
-    git \
     hashcat \
     cuda-nvrtc-13-2 \
     cuda-cudart-13-2 \
