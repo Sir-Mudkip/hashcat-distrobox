@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf hashcat-${HASHCAT_VERSION} hashcat-${HASHCAT_VERSION}.7z \
     && chmod +x /opt/hashcat/hashcat.bin \
     && ln -s /opt/hashcat/hashcat.bin /usr/bin/hashcat \
-    && chmod -R 755 /opt/hashcat \
+    && chmod -R 777 /opt/hashcat \
     && apt-get purge -y --auto-remove wget p7zip-full \
     && rm -rf /var/lib/apt/lists/*
 
