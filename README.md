@@ -12,7 +12,7 @@ You can do this via a CLI, or you can do it easier way with DistroShelf which pr
 https://flathub.org/en-GB/apps/com.ranfdev.DistroShelf
 
 ```shell
-distrobox create --image ghcr.io/sir-mudkip/hashcat-distrobox:latest --name hashcat-cuda --additional-flags "--gpus all"
+distrobox create --image ghcr.io/sir-mudkip/hashcat-distrobox:latest --name hashcat-cuda --additional-flags "--gpus all -v /path/to/wordlist:/path/to/wordlist"
 ```
 ```shell
 distrobox enter hashcat-cuda
