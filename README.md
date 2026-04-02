@@ -1,6 +1,6 @@
 ## Purpose
 
-This is a Container made for distrobox and designed to run hashcat. It supports GPU passthrough and has the appropriate dependencies to use hashcat. Before I say anything, this container does not include any wordlists out the box, Those you will need to add yourself. I'd suggest using Seclists, then mounting it to the container at the point of creation.
+This is a Container made for distrobox and designed to run hashcat. It contians the necessary nvidia drivers to use your GPU. Before I say anything, this container does not include any wordlists out the box, Those you will need to add yourself. I'd suggest using Seclists, then mounting it to the container at the point of creation.
 
 > This container is specific to Nvidia. It is far less painful to configure this for AMD. If you wanted to run this out of a container using docker and podman, simply allow GPU passthrough at container run time.
 
